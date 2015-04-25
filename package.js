@@ -68,7 +68,6 @@ Package.onUse(function(api) {
   api.use([
     'deps',
     'service-configuration',
-    'accounts-password',
     'accounts-base',
     'underscore',
     'coffeescript'
@@ -78,7 +77,6 @@ Package.onUse(function(api) {
 
   // CLIENT and SERVER
   api.imply('accounts-base', ['client', 'server']);
-  api.imply('accounts-password', ['client', 'server']);
   api.export('AccountsEntry', ['client', 'server']);
   api.addFiles(['shared/router.coffee'], ['client', 'server']);
 
