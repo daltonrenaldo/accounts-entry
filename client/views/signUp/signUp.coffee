@@ -90,8 +90,8 @@ AccountsEntry.entrySignUpEvents = {
         errMsg.push t9n("error.minChar")
       if password.search(/[a-z]/i) < 0
         errMsg.push t9n("error.pwOneLetter")
-      if password.search(/[0-9]/) < 0
-        errMsg.push t9n("error.pwOneDigit")
+      # if password.search(/[0-9]/) < 0
+      #   errMsg.push t9n("error.pwOneDigit")
 
       if errMsg.length > 0
         msg = ""
